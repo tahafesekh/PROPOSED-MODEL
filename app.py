@@ -74,7 +74,7 @@ else:
     default_Ef = 50000.0
     default_Af = 157.0
     default_rho_f = 0.35
-    default_rho_fb = 0.22
+    default_rho_fb = 0.23
     default_d = 225.0
     default_d_prime = 25.0
     default_b = 200.0
