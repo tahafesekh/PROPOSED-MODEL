@@ -8,17 +8,42 @@ st.markdown("""
             background-color: white !important;
             color: black !important;
         }
+        .stMarkdown, .stTitle, .stHeader, .stSubheader, .stCaption, .stTextInput > label,
+        .stNumberInput > label, .stSelectbox > label, .stInfo, .stAlert, .stSuccess, .stError, .stButton > button {
+            color: black !important;
+        }
+        [data-testid="stSidebar"] {
+            background-color: white !important;
+        }
+        .stButton > button {
+            color: black !important;
+            border: 1px solid #333;
+            background: #fff !important;
+        }
+        .stAlert, .stInfo, .stSuccess, .stError {
+            background-color: #e3f2fd !important;
+            color: #222 !important;
+            border-left: 5px solid #2196f3 !important;
+            border-radius: 6px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .stInfo > div, .stAlert > div, .stSuccess > div, .stError > div {
+            color: #222 !important;
+            background-color: #e3f2fd !important;
+        }
         .special-bold-box {
             background-color: #d2ffd2 !important;
             color: #185d18 !important;
             border-left: 5px solid #219653 !important;
             border-radius: 7px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
             font-weight: bold !important;
             padding: 0.8em 0.7em !important;
             margin-bottom: 8px !important;
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 st.title("Calculation of the Maximum Deflection Using the Proposed Model")
 st.markdown("by Taha A.Fesekh, Ehab M. Lotfy, Erfan Abdel-Latif, Nady M. Abdel-Fattah, and Abdel-Rahman M. Naguib")
