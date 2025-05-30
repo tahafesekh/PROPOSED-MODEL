@@ -201,7 +201,7 @@ if st.button("Calculate"):
     results.append(f"Reduction factor λe = {lambda_e:.3f}")
     results.append(f"Neutral axis depth y_t = {yt:.3f} mm")
     results.append(f"Equivalent area A_t = {At:.3f} mm²")
-    results.append(f"Ig (uncracked moment of inertia) = {Ig:.3f} mm⁴")
+    results.append(f"Ig (Gross moment of inertia) = {Ig:.3f} mm⁴")
     results.append(f"Maximum moment Ma = {Ma:.2f} N·mm")
     results.append(f"Modulus of rupture fr = {fr:.3f} MPa")
     results.append(f"Cracking moment Mcr = {Mcr:.2f} N·mm")
