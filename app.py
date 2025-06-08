@@ -165,12 +165,12 @@ else:
 # Calculations
 Ec = 4700 * (fc ** 0.5)
 nf = Ef / Ec
-beta_d = min(0.05 * (rho_f / rho_fb), 0.50)
+beta_d = min(0.06 * (rho_f / rho_fb), 0.50)
 Xd_ratio = X / d if d != 0 else 0
 if Xd_ratio <= 2.8:
-    lambda_e = min(max(0.085 * Xd_ratio + 0.00813 * d_prime + 0.461, 0.80), 0.95)
+    lambda_e = min(max(0.085 * Xd_ratio + 0.00813 * d_prime + 0.44, 0.80), 0.95)
 else:
-    lambda_e = min(max(-0.0074 * Xd_ratio + 0.0094 * d_prime + 0.32, 0.55), 0.95)
+    lambda_e = min(max(-0.0074 * Xd_ratio + 0.0094 * d_prime + 0.30, 0.55), 0.95)
 
 if section_type == "T-section":
     At = A1 + A2 + (nf - 1) * Af
