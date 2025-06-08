@@ -167,8 +167,8 @@ Ec = 4700 * (fc ** 0.5)
 nf = Ef / Ec
 beta_d = min(0.05 * (rho_f / rho_fb), 0.50)
 Xd_ratio = X / d if d != 0 else 0
-if Xd_ratio <= 2.7:
-    lambda_e = min(max(0.085 * Xd_ratio + 0.00813 * d_prime + 0.461, 0.75), 0.95)
+if Xd_ratio <= 2.8:
+    lambda_e = min(max(0.085 * Xd_ratio + 0.00813 * d_prime + 0.461, 0.80), 0.95)
 else:
     lambda_e = min(max(-0.0074 * Xd_ratio + 0.0094 * d_prime + 0.32, 0.55), 0.95)
 
@@ -407,8 +407,8 @@ if st.session_state.show_log:
     logs.append(f"2️⃣ Modular ratio nf = Ef / Ec = {Ef} / {Ec:.2f} = {nf:.3f}")
 
     if section_type == "T-section":
-        logs.append(f"3️⃣ Flange area A1 = {b} * {y1} = {A1:.2f} mm²")
-        logs.append(f"4️⃣ Web area A2 = {B} * {y2} = {A2:.2f} mm²")
+        logs.append(f"3️⃣ Web area A1 = {b} * {y1} = {A1:.2f} mm²")
+        logs.append(f"4️⃣ Flange area A2 = {B} * {y2} = {A2:.2f} mm²")
         logs.append(f"5️⃣ Equivalent area At = {A1:.2f} + {A2:.2f} + ({nf:.3f} - 1) * {Af} = {At:.2f} mm²")
         logs.append(f"6️⃣ Neutral axis yt =  {yt:.2f} mm")
         logs.append(f"7️⃣ Gross moment of inertia Ig =  {Ig:.2f} mm⁴")
