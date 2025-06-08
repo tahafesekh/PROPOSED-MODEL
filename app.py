@@ -418,7 +418,7 @@ if st.session_state.show_log:
         logs.append(f"5️⃣ Neutral axis yt =  {yt:.2f} mm")
         logs.append(f"6️⃣ Gross moment of inertia Ig =  {Ig:.2f} mm⁴")
 
-    logs.append(f"8️⃣ Reduction coefficient βd = min(0.05*({rho_f}/{rho_fb}), 0.50) = {beta_d:.3f}")
+    logs.append(f"8️⃣ Reduction coefficient βd = min(0.06*({rho_f}/{rho_fb}), 0.50) = {beta_d:.3f}")
     logs.append(f"9️⃣ Reduction factor λe = {lambda_e:.3f}")
     logs.append(f"🔟 Maximum moment Ma = (({Pa} × 1000) / 2) × {X} = {Ma:.2f} N·mm")
     logs.append(f"11️⃣ Modulus of rupture fr = 0.62 * sqrt({fc}) = {fr:.3f} MPa")
